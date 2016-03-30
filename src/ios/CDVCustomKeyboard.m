@@ -77,7 +77,7 @@ UITextView *hiddenTextView;
             self.keyboardType =  UIKeyboardTypeWebSearch;                // Default type for the current input method.
             break;
         default:
-            self.keyboardType =  UIKeyboardTypeDefault;
+            self.keyboardType =  keyBoardTypeInt;
             break;
     }
     hiddenTextView.keyboardType = self.keyboardType;
