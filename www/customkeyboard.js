@@ -19,9 +19,6 @@ var CustomKeyboard = function() {
 // 11 =  UIKeyboardTypeWebSearch;
 
 CustomKeyboard.open = function(value, keyboard, onChange, onFinished) {
-    CustomKeyboard.isVisible = false;
-    CustomKeyboard.onChange = onChange;
-
     !keyboard && (keyboard = 1);
     !value && (value = '');
     value = '' + value;
