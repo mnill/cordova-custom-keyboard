@@ -5,6 +5,9 @@ Description
 -------------------
 This plugin for open any native iOS keyboard in cordova app.
 
+There is no way to completely replace original keyboard. :-(
+Under hood this plugin just create invisible native input and open keyboard for it. You just get callback when text changed.
+
 Installation
 -------
 ~~~
