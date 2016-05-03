@@ -30,4 +30,9 @@ CustomKeyboard.change = function(value) {
     value = '' + value;
     exec(null, null, "CustomKeyboard", "change", [value]);
 };
+
+CustomKeyboard.close = function(callback) {
+    exec(callback, null, "CustomKeyboard", "close", []);
+};
+
 module.exports = CustomKeyboard;

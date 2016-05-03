@@ -7,6 +7,7 @@
 @property (nonatomic) UIKeyboardType keyboardType;
 
 - (void)open:(CDVInvokedUrlCommand*)command;
+- (void)close:(CDVInvokedUrlCommand*)command;
 - (void)change:(CDVInvokedUrlCommand*)command;
 
 @end

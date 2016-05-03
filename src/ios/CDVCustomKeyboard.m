@@ -85,6 +85,13 @@ UITextView *hiddenTextView;
     [hiddenTextView becomeFirstResponder];
 }
 
+- (void)close:(CDVInvokedUrlCommand*)command
+{
+    [self.webView becomeFirstResponder];
+    [hiddenTextView resignFirstResponder];
+    [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK]  callbackId:command.callbackId];
+}
+
 - (void)change:(CDVInvokedUrlCommand*)command
 {
     NSString *value = [command argumentAtIndex:0];
